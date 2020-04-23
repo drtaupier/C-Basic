@@ -24,7 +24,7 @@ namespace CSharpBasics
             var result = num1 + num2; 
             Console.WriteLine($"The result is: {result}" );
         }
-        public static void MyMethod2()
+        public static void MultiplyTwoNumbers()
         {
             //throw new NotImplementedException();
             Console.WriteLine("method 2");
