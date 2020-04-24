@@ -47,34 +47,5 @@ namespace CSharpBasics
             var name = Console.ReadLine();
             Console.WriteLine($"Hello {name}");
         }
-        public static void GiveMeANumber()
-        {
-            //Enter the first number between 1 to 10
-            Console.Write("Hey!, give me a number between 1 to 10: ");
-            var input1 = Console.ReadLine();
-            int.TryParse(input1, out int num1);
-
-            if(num1 < 0 || num1 > 10)
-            {
-                Console.WriteLine("Please, the number should be between 1 to 10");
-            }
-            else
-            {
-            //Enter the second number between 1 to 10
-            Console.Write("now, give me a second number between 1 to 10: ");
-            input1 = Console.ReadLine();
-            int.TryParse(input1, out int num2);
-                if(num2 < 0 || num2 > 10)
-                {
-                    Console.WriteLine("Please, the number should be between 1 to 10");
-                }
-                else
-                {
-                    var result = num1 + num2;
-                    Console.WriteLine($"The result is: {result}");
-                }
-            }
-
-        }
     }
 }
