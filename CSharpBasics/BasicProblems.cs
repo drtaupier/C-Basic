@@ -27,20 +27,20 @@ namespace CSharpBasics
         public static void MultiplyTwoNumbers()
         {
             //Enter the first number
-            Console.Write("Enter your firs number: ");
+            Console.Write("Enter your first number: ");
             var inputNumber = Console.ReadLine();
-            int.TryParse(inputNumber, out int numero1);
+            int.TryParse(inputNumber, out int num1);
 
             //Enter the second number
             Console.Write("Enter your second number: ");
             inputNumber = Console.ReadLine();
-            int.TryParse(inputNumber, out int numero2);
+            int.TryParse(inputNumber, out int num2);
 
             //Display result
-            var result = numero1 * numero2;
+            var result = num1 * num2;
             Console.WriteLine($"The result is: {result}");
         }
-        public static void Saludo()
+        public static void Greeting()
         {
             //Enter the name
             Console.Write("Hello, what's your name? ");

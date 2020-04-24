@@ -24,10 +24,7 @@ namespace CSharpBasics
                             BasicProblems.MultiplyTwoNumbers();
                             break;
                         case 3:
-                            BasicProblems.Saludo();
-                            break;
-                        case 4:
-                            BasicProblems.GiveMeANumber();
+                            BasicProblems.Greeting();
                             break;
                         default:
                             Console.WriteLine("Nothing to do.");
