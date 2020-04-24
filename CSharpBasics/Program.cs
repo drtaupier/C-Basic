@@ -21,7 +21,10 @@ namespace CSharpBasics
                             BasicProblems.SumTwoNumbers();
                             break;
                         case 2:
-                            BasicProblems.MyMethod2();
+                            BasicProblems.MultiplyTwoNumbers();
+                            break;
+                        case 3:
+                            BasicProblems.Greeting();
                             break;
                         default:
                             Console.WriteLine("Nothing to do.");
