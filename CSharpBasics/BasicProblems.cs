@@ -47,7 +47,8 @@ namespace CSharpBasics
             var name = Console.ReadLine();
             Console.WriteLine($"Hello {name}");
         }
-        public static void multiple_numbers()
+
+        public static void Multiple_numbers()
         {
             Console.Write("Hey!, tell me how many times do you want to enter numbers to this operation between 1 to 10 times:  ");
             var inputNumber = Console.ReadLine();
@@ -68,6 +69,14 @@ namespace CSharpBasics
                 }
                 Console.WriteLine($"The result is: {sum}");
             }            
+        }
+
+        public static void IsEvenOrOdd()
+        {
+            //First number
+            Console.Write("Please, enter a number: ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int num1);
         }
     }
 }
