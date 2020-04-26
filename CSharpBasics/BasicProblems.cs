@@ -47,5 +47,36 @@ namespace CSharpBasics
             var name = Console.ReadLine();
             Console.WriteLine($"Hello {name}");
         }
+
+        public static void Multiple_numbers()
+        {
+            Console.Write("Hey!, tell me how many times do you want to enter numbers to this operation between 1 to 10 times:  ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int times);
+            var sum = 0;
+            
+            //Validation
+            if(times < 1 || times > 10){
+                Console.WriteLine("The number should be between number 1 to 10, please, try again");
+            }
+            else
+            {
+                for (var i = 1; i <= times; i++){
+                    Console.Write("Please, enter a number: ");
+                    var numberCase = Console.ReadLine();
+                    int.TryParse(numberCase, out int num1);
+                    sum += num1;
+                }
+                Console.WriteLine($"The result is: {sum}");
+            }            
+        }
+
+        public static void IsEvenOrOdd()
+        {
+            //First number
+            Console.Write("Please, enter a number: ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int num1);
+        }
     }
 }
