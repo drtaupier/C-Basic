@@ -21,8 +21,8 @@ namespace CSharpBasics
             int.TryParse(userInput, out int num2);
 
             //Display result
-            var result = num1 + num2; 
-            Console.WriteLine($"The result is: {result}" );
+            var result = num1 + num2;
+            Console.WriteLine($"The result is: {result}");
         }
         public static void MultiplyTwoNumbers()
         {
@@ -54,21 +54,23 @@ namespace CSharpBasics
             var inputNumber = Console.ReadLine();
             int.TryParse(inputNumber, out int times);
             var sum = 0;
-            
+
             //Validation
-            if(times < 1 || times > 10){
+            if (times < 1 || times > 10)
+            {
                 Console.WriteLine("The number should be between number 1 to 10, please, try again");
             }
             else
             {
-                for (var i = 1; i <= times; i++){
+                for (var i = 1; i <= times; i++)
+                {
                     Console.Write("Please, enter a number: ");
                     var numberCase = Console.ReadLine();
                     int.TryParse(numberCase, out int num1);
                     sum += num1;
                 }
                 Console.WriteLine($"The result is: {sum}");
-            }            
+            }
         }
 
         public static void IsEvenOrOdd()
@@ -77,6 +79,15 @@ namespace CSharpBasics
             Console.Write("Please, enter a number: ");
             var inputNumber = Console.ReadLine();
             int.TryParse(inputNumber, out int num1);
+
+            if (num1 % 2 == 0)
+            {
+                Console.WriteLine("The number is even");
+            }
+            else
+            {
+                Console.WriteLine("The number is odd");
+            }
         }
     }
 }
