@@ -125,7 +125,7 @@ namespace CSharpBasics
             }
         }
 
-        public static void average()
+        public static void Average()
         {
             Console.Write("Hi, how many numbers do you want to enter: ");
             var inputNumber = Console.ReadLine();
