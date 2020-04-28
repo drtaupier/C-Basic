@@ -115,11 +115,7 @@ namespace CSharpBasics
             int dayNow = today.Day;
             //subtracting years
             var age = yearNow - yearOfBirth;
-            if (monthOfBirth > monthNow)
-            {
-                Console.WriteLine($"The age is: {age - 1}");
-            }
-            else if (monthOfBirth == monthNow && dayOfBirth > dayNow)
+            if (monthOfBirth > monthNow || monthOfBirth == monthNow && dayOfBirth > dayNow)
             {
                 Console.WriteLine($"The age is: {age - 1}");
             }
