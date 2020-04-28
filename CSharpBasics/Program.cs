@@ -27,7 +27,19 @@ namespace CSharpBasics
                             BasicProblems.Greeting();
                             break;
                         case 4:
-                            BasicProblems.multiple_numbers();
+                            BasicProblems.Multiple_numbers();
+                            break;
+                        case 5:
+                            BasicProblems.IsEvenOrOdd();
+                            break;
+                        case 6:
+                            BasicProblems.WhatIsYourAge();
+                            break;
+                        case 7:
+                            BasicProblems.WhatIsYourAge();
+                            break;
+                        case 8:
+                            BasicProblems.average();
                             break;
                         default:
                             Console.WriteLine("Nothing to do.");
