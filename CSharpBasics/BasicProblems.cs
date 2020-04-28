@@ -124,5 +124,22 @@ namespace CSharpBasics
                 Console.WriteLine($"The age is: {age}");
             }
         }
+
+        public static void average()
+        {
+            Console.Write("Hi, how many numbers do you want to enter: ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int times);
+            //
+            double sum = 0;
+            for(var i = 1; i<=times; i++)
+            {
+                Console.Write("Please, enter a number: ");
+                var numberCase = Console.ReadLine();
+                double.TryParse(numberCase, out double num);
+                sum += num;
+            }
+            Console.WriteLine($"The result is: {sum / times}");
+        }
     }
 }

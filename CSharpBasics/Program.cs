@@ -38,6 +38,9 @@ namespace CSharpBasics
                         case 7:
                             BasicProblems.WhatIsYourAge();
                             break;
+                        case 8:
+                            BasicProblems.average();
+                            break;
                         default:
                             Console.WriteLine("Nothing to do.");
                             break;
