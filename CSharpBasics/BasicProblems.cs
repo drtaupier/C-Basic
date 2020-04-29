@@ -89,5 +89,57 @@ namespace CSharpBasics
                 Console.WriteLine("The number is odd");
             }
         }
+
+        public static void WhatIsYourAge()
+        {
+            //Year
+            Console.Write("What is your year of birth?: ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int yearOfBirth);
+            //Month
+            Console.Write("Could you tell me in numbers what month were you born?: ");
+            inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int monthOfBirth);
+            //Day
+            Console.Write("what day were you born?: ");
+            inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int dayOfBirth);
+
+            //Today:
+            DateTime today = DateTime.Today;
+            //Get year
+            int yearNow = today.Year;
+            //Get month
+            int monthNow = today.Month;
+            //Get day
+            int dayNow = today.Day;
+            //subtracting years
+            var age = yearNow - yearOfBirth;
+            if (monthOfBirth > monthNow || monthOfBirth == monthNow && dayOfBirth > dayNow)
+            {
+                Console.WriteLine($"The age is: {age - 1}");
+            }
+            else
+            {
+                Console.WriteLine($"The age is: {age}");
+            }
+        }
+
+        public static void average()
+        {
+            Console.Write("Hi, how many numbers do you want to enter: ");
+            var inputNumber = Console.ReadLine();
+            int.TryParse(inputNumber, out int times);
+            //
+            double sum = 0;
+            for(var i = 1; i<=times; i++)
+            {
+                Console.Write("Please, enter a number: ");
+                var numberCase = Console.ReadLine();
+                double.TryParse(numberCase, out double num);
+                sum += num;
+            }
+            Console.WriteLine($"The result is: {sum / times}");
+        }
     }
 }
